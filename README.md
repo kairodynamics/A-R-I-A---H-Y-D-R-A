@@ -28,7 +28,7 @@ Günümüzün büyük dil modelleri, devasa parametre sayıları ve sürdürüle
 
 ### Durum ve Yol Haritası
 
-*   **Mevcut Sürüm:** 9.1 (Helios)
+*   **Mevcut Sürüm:** H Y D R A (Helios)
 *   **Durum:** Aktif geliştirme ve kapalı eğitim altında.
 
 ### Topluluk ve İletişim
