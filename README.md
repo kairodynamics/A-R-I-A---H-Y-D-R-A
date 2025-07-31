@@ -1,4 +1,4 @@
-# ARIA-Hydra
+# ARIA-Hydra (Helios) - Eğitim Süreci Devam Ediyor
 
 **An Ultra-Efficient, Memory-Optimized Self-Regulating Hybrid Transformer**
 
