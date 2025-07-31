@@ -30,17 +30,13 @@ Günümüzün büyük dil modelleri, devasa parametre sayıları ve sürdürüle
 
 *   **Mevcut Sürüm:** 9.1 (Helios)
 *   **Durum:** Aktif geliştirme ve kapalı eğitim altında.
-*   **Yol Haritası:**
-    *   **Q3 2024:** İlk demo ve API erişimi için bekleme listesinin açılması.
-    *   **Q4 2024:** Seçili ortaklarla kapalı beta programının başlatılması.
-    *   **2025:** Daha geniş kapsamlı API erişimi ve potansiyel ticari lisanslama.
 
 ### Topluluk ve İletişim
 
 Bu proje kapalı kaynaklı olsa da, yapay zeka topluluğuyla etkileşim kurmaktan ve fikir alışverişinde bulunmaktan heyecan duyuyoruz.
 
 *   **Gelişmeleri Takip Etmek İçin:** Bu depoyu `Watch` ederek en son güncellemelerden haberdar olabilirsiniz.
-*   **İşbirliği ve Erişim Talepleri İçin:** Lütfen `[e-posta adresiniz]` üzerinden bizimle iletişime geçin.
+*   **İşbirliği ve Erişim Talepleri İçin:** Lütfen `emreaygul.work@gmail.com` üzerinden bizimle iletişime geçin.
 *   **Topluluk:** Yakında duyurulacak Discord sunucumuz için takipte kalın.
 
 ---
@@ -56,3 +52,50 @@ Bu depoda bulunan materyaller (yazılım, belgeler, mimari tanımları ve diğer
 ARIA Development Team'in önceden açık ve yazılı izni olmaksızın, bu materyallerin herhangi bir bölümünün kopyalanması, çoğaltılması, değiştirilmesi, dağıtılması, tersine mühendisliğe tabi tutulması veya herhangi bir biçimde veya yolla iletilmesi kesinlikle yasaktır.
 
 Bu materyallere erişim, yalnızca bilgilendirme ve değerlendirme amacıyla sağlanmıştır ve herhangi bir kullanım, lisans veya mülkiyet hakkı vermez.
+
+## English Version
+
+### Philosophy: Intelligent and Self-Regulating Systems
+
+Today's Large Language Models are hitting a wall of inefficiency, characterized by massive parameter counts and unsustainable computational costs. ARIA-Hydra is a radical approach that challenges this paradigm, built upon three core principles:
+
+1.  **Dynamic Information Flow Regulation:** Unlike the static residual connections in standard Transformer architectures, ARIA-Hydra utilizes a proprietary mechanism called **Gated Memory Units (GMU)**. These units dynamically manage the flow of information at each layer, enabling the model to optimize gradients and establish deeper semantic hierarchies. The result is greater learning capacity with fewer layers.
+
+2.  **Asymmetric Capacity Scaling:** It is possible to increase a model's knowledge capacity without exponentially increasing its computational cost. ARIA-Hydra addresses this challenge with an **Optimized Top-K Sparse Mixture-of-Experts (MoE)** architecture. Our custom routing mechanism, designed for maximum hardware efficiency, allows access to a theoretical knowledge pool of trillions of parameters within the computational budget of a much smaller model.
+
+3.  **Maximum Hardware Efficiency:** ARIA-Hydra is not just an algorithm; it is a philosophy of hardware optimization. Its training and inference processes are engineered to minimize VRAM usage and maximize throughput on modern accelerators. The synergistic use of techniques like **Gradient Checkpointing, CPU Offloading, and FP8 Activation Storage** enables the training of massive models even with limited resources.
+
+### Core Differentiators
+
+| Feature                 | Standard Approach                               | ✅ ARIA-Hydra Approach                                                               |
+| ----------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **Information Flow**    | Static Residuals                                | **Dynamic Gated Memory Units (GMU)** for learnable, intelligent information flow.  |
+| **Capacity vs. Cost**   | Cost scales exponentially with parameters.      | **Asymmetric MoE** scales knowledge capacity while keeping compute cost low.       |
+| **Hardware Utilization**| High VRAM consumption, requires expensive hardware. | **Integrated Optimizations** for maximum efficiency, even on constrained resources.  |
+
+### Status & Roadmap
+
+*   **Current Version:** 9.1 (Helios)
+*   **Status:** Under active development and private training.
+
+### Community & Contact
+
+While this project is closed-source, we are excited to engage with the AI community and exchange ideas.
+
+*   **To Follow Developments:** `Watch` this repository to be notified of the latest updates.
+*   **For Collaboration and Access Inquiries:** Please contact us at `emreaygul.work@gmail.com`.
+*   **Community:** Stay tuned for our upcoming Discord server.
+
+---
+
+### License
+
+Copyright (c) 2024, ARIA Development Team
+
+All rights reserved.
+
+The materials contained in this repository, including but not limited to software, documentation, architectural descriptions, and all other content, are the proprietary property of the ARIA Development Team.
+
+Without the prior express written permission of the ARIA Development Team, no part of these materials may be copied, reproduced, modified, distributed, reverse-engineered, or transmitted in any form or by any means.
+
+Access to these materials is provided for informational and evaluation purposes only and does not grant any right of use, license, or ownership.
