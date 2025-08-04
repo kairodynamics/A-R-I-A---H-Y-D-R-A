@@ -1,10 +1,8 @@
-# ========================================================================================
-#
 #        A R I A - H E L I O S   (S E L F - C O N T A I N E D)
-#
-#     A Hyper-Extensible, Long-context Optimized Self-Regulating Transformer
-#
-# ========================================================================================
+
+---
+*A Hyper-Extensible, Long-context Optimized Self-Regulating Transformer*
+---
 
 ---
 
