@@ -79,6 +79,7 @@ Bu proje kapalı kaynaklı olsa da, yapay zeka topluluğuyla etkileşim kurmakta
 
 ---
 <br/>
+
 <a name="english-version"></a>
 ## 🇬🇧 English Version
 
