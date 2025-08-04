@@ -3,7 +3,7 @@
 # A R I A - H E L I O S
 ### A Hyper-Extensible, Long-context Optimized Self-Regulating Transformer
   
-[![Contact: Email](https.img.shields.io/badge/Contact-Email-informational.svg)](mailto:emreaygul.work@gmail.com)
+[![Contact: Email]](mailto:emreaygul.work@gmail.com)
 
 </div>
 
