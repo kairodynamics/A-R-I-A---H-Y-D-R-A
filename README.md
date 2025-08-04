@@ -1,5 +1,5 @@
 <div align="center">                                          
-```
+
 # A R I A - H E L I O S
 ### A Hyper-Extensible, Long-context Optimized Self-Regulating Transformer
   
