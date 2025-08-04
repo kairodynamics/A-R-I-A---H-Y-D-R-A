@@ -1,12 +1,4 @@
-<div align="center">
-
-```
-    _   ____   ___      _    _   _____  _   _   ___   ____ 
-   / \  |  _ \ |_ _|    | |  | | | ____|| \ | | / _ \ / ___|
-  / _ \ | |_) | | |     | |  | | |  _|  |  \| || | | |\___ \ 
- / ___ \|  _ <  | |  _  | |__| | | |___ | |\  || |_| | ___) |
-/_/   \_\_| \_\|___|(_)  \____/  |_____||_| \_| \___/ |____/ 
-                                                           
+<div align="center">                                          
 ```
 # A R I A - H E L I O S
 ### A Hyper-Extensible, Long-context Optimized Self-Regulating Transformer
