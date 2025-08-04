@@ -1,49 +1,69 @@
-#        A R I A - H E L I O S   (S E L F - C O N T A I N E D)
+<div align="center">
+
+```
+    _   ____   ___      _    _   _____  _   _   ___   ____ 
+   / \  |  _ \ |_ _|    | |  | | | ____|| \ | | / _ \ / ___|
+  / _ \ | |_) | | |     | |  | | |  _|  |  \| || | | |\___ \ 
+ / ___ \|  _ <  | |  _  | |__| | | |___ | |\  || |_| | ___) |
+/_/   \_\_| \_\|___|(_)  \____/  |_____||_| \_| \___/ |____/ 
+                                                           
+```
+# A R I A - H E L I O S
+### A Hyper-Extensible, Long-context Optimized Self-Regulating Transformer
+
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](https://github.com/your-repo/aria-helios#%EF%B8%8F-lisans-license)
+[![Status: Active Development](https.img.shields.io/badge/Status-Active%20Development-green.svg)](https://github.com/your-repo/aria-helios#-durum-ve-yol-haritası)
+[![Version: 1.0.0-HELIOS](https://img.shields.io/badge/Version-1.0.0--HELIOS-blue.svg)](https://github.com/your-repo/aria-helios#-durum-ve-yol-haritası)
+[![Contact: Email](https.img.shields.io/badge/Contact-Email-informational.svg)](mailto:emreaygul.work@gmail.com)
+
+</div>
 
 ---
-*A Hyper-Extensible, Long-context Optimized Self-Regulating Transformer*
----
+
+<p align="center">
+  <strong><a href="#-türkçe-versiyon">🇹🇷 Türkçe Versiyon</a></strong>
+     •   
+  <strong><a href="#-english-version">🇬🇧 English Version</a></strong>
+</p>
 
 ---
 
-*Not: Bu depo, `ARIA-HELIOS` mimarisinin sağlanan Python kaynak koduyla uyumlu teknik dökümantasyonunu sunmaktadır. Bu belge, modelin felsefesini, temel bileşenlerini ve tasarım kararlarını detaylandırmak amacıyla oluşturulmuştur.*
+<a name="türkçe-versiyon"></a>
+## 🇹🇷 Türkçe Versiyon
 
----
+> **Not:** Bu depo, `ARIA-HELIOS` mimarisinin sağlanan Python kaynak koduyla uyumlu teknik dökümantasyonunu sunmaktadır. Bu belge, modelin felsefesini, temel bileşenlerini ve tasarım kararlarını detaylandırmak amacıyla oluşturulmuştur.
 
-### Teknik Felsefe: Otonom, Verimli ve Esnek Zeka
+### 🧠 Teknik Felsefe: Otonom, Verimli ve Esnek Zeka
 
 ARIA-Helios, günümüzün büyük dil modellerinin karşılaştığı verimlilik ve ölçeklenebilirlik zorluklarına yanıt olarak tasarlanmış, son teknoloji bir mimaridir. Geliştirmesi, üç temel ve birbiriyle sinerji içinde çalışan ilkeye dayanmaktadır:
 
-1.  **Kendi Kendini Düzenleyen Bilgi Akışı (Self-Regulating Information Flow):** Standart Transformer mimarilerindeki statik `output = x + F(x)` artık bağlantıları, modelin derinleştikçe bilgi darboğazları yaşamasına veya gradyan akışını bozmasına neden olabilir. ARIA-Helios, bu sorunu **Kapılı Bellek Birimleri (Gated Memory Units - GMU)** ile çözer. Her katmanın dönüşümünden sonra eklenen bu öğrenilebilir kapılar, `output = (1 - gate) * x + gate * F(x)` formülasyonu ile modelin hangi bilgiyi koruyacağına ve hangi yeni bilgiyi entegre edeceğine dinamik olarak karar vermesini sağlar. Bu, daha stabil bir eğitim süreci ve daha zengin hiyerarşik özellik öğrenimi ile sonuçlanır.
+1.  **Kendi Kendini Düzenleyen Bilgi Akışı (Self-Regulating Information Flow):** Standart `output = x + F(x)` artık bağlantıları yerine, öğrenilebilir **Kapılı Bellek Birimleri (Gated Memory Units - GMU)** kullanılır. Bu kapılar `output = (1 - gate) * x + gate * F(x)` formülasyonu ile modelin hangi bilgiyi koruyacağına ve hangisini entegre edeceğine dinamik olarak karar vermesini sağlayarak daha stabil bir eğitim ve daha zengin bir özellik öğrenimi sunar.
 
-2.  **Dinamik Bağlam Esnekliği (Dynamic Context Flexibility):** Bir modelin anlama kapasitesi, eğitim sırasında gördüğü bağlam penceresiyle sınırlı olmamalıdır. ARIA-Helios, **YaRN (Yet another RoPE extensioN method)**'dan ilham alan dinamik pozisyonel gömme ölçeklendirmesini destekler. Bu teknik, Rotary Pozisyonel Gömme (RoPE) frekanslarını akıllıca yeniden kalibre ederek, modelin eğitim bağlamının çok ötesindeki dizi uzunluklarını, tam bir yeniden eğitime gerek kalmadan etkili bir şekilde işlemesine olanak tanır.
+2.  **Dinamik Bağlam Esnekliği (Dynamic Context Flexibility):** Modelin anlama kapasitesi, eğitim penceresiyle sınırlı olmamalıdır. **YaRN (Yet another RoPE extensioN method)**'dan ilham alan ölçeklendirme, modelin yeniden eğitime gerek kalmadan, eğitimde gördüğünün çok ötesindeki dizi uzunluklarını etkili bir şekilde işlemesine olanak tanır.
 
-3.  **Maksimum Donanım Verimliliği (Maximum Hardware Efficiency):** ARIA-Helios, sadece bir algoritma koleksiyonu değil, aynı zamanda bir donanım optimizasyon felsefesidir. Mimarinin her katmanı, modern hızlandırıcılardan (GPU/TPU) maksimum verim almak ve bellek (VRAM) kullanımını en aza indirmek için tasarlanmıştır. **Gradient Checkpointing, CPU Offloading** ve eğitim sırasında aktivasyonları 8-bit'te depolayan **FP8 Activation Storage** gibi tekniklerin entegre kullanımı, devasa modellerin daha erişilebilir donanımlarla eğitilmesini ve çalıştırılmasını mümkün kılar.
+3.  **Maksimum Donanım Verimliliği (Maximum Hardware Efficiency):** Mimarinin her katmanı, modern hızlandırıcılardan (GPU/TPU) maksimum verim almak ve VRAM kullanımını en aza indirmek için tasarlanmıştır. **Gradient Checkpointing, CPU Offloading** ve **FP8 Activation Storage** gibi tekniklerin entegre kullanımı, devasa modellerin daha erişilebilir donanımlarla eğitilmesini mümkün kılar.
 
-### Mimari Planı ve Teknik Bileşenler
+### 🛠️ Mimari Planı ve Teknik Bileşenler
 
 ARIA-Helios'un gücü, birbiriyle uyum içinde çalışan modern ve verimli bileşenlerin birleşiminden gelir.
 
-*   **Gated Memory Units (GMU):**
+*   #### Gated Memory Units (GMU)
     *   **Ne yapar?** Standart artık bağlantıların yerini alır.
-    *   **Nasıl çalışır?** Girdi (`x`) ve katman dönüşümünü (`F(x)`) öğrenilebilir bir sigmoid kapısı ile dinamik olarak ağırlıklandırır. Eğitim başlangıcında kapıların "kapalı" (`bias = -3.0`) başlatılması, modelin önce stabil kimlik bağlantılarını öğrenmesini, ardından yavaşça yeni bilgileri entegre etmesini sağlar.
+    *   **Nasıl çalışır?** Girdi (`x`) ve katman dönüşümünü (`F(x)`) öğrenilebilir bir sigmoid kapısı ile dinamik olarak ağırlıklandırır. `bias = -3.0` ile başlatılan kapılar, modelin önce stabil kimlik bağlantılarını öğrenmesini sağlar.
 
-*   **Dynamic Context Scaling (YaRN-inspired):**
+*   #### Dynamic Context Scaling (YaRN-inspired)
     *   **Ne yapar?** Modelin eğitimde gördüğünden daha uzun metinleri işlemesini sağlar.
-    *   **Nasıl çalışır?** RoPE pozisyonel gömmelerinin frekanslarını ve sorgu (query) vektörlerinin genliğini, bağlam genişletme faktörüne göre yeniden ölçekler. Bu, modelin uzun dizilerdeki pozisyonel bilgiyi "şaşırmadan" yorumlamasına olanak tanır.
+    *   **Nasıl çalışır?** RoPE pozisyonel gömmelerinin frekanslarını ve sorgu (query) vektörlerinin genliğini, bağlam genişletme faktörüne göre yeniden ölçekler.
 
-*   **Grouped-Query Attention (GQA):**
-    *   **Ne yapar?** Çıkarım (inference) hızını artırır ve bellek bant genişliği ihtiyacını azaltır.
-    *   **Nasıl çalışır?** Tam sayıda Sorgu (Query) başlığına karşılık, daha az sayıda Anahtar (Key) ve Değer (Value) başlığı kullanır. Bu, özellikle metin üretimi sırasındaki KV-Cache boyutunu dramatik şekilde küçülterek verimliliği artırır.
+*   #### Grouped-Query Attention (GQA)
+    *   **Ne yapar?** Çıkarım hızını artırır ve bellek bant genişliği ihtiyacını azaltır.
+    *   **Nasıl çalışır?** Tam sayıda Sorgu (Query) başlığına karşılık daha az sayıda Anahtar (Key) ve Değer (Value) başlığı kullanarak KV-Cache boyutunu dramatik şekilde küçültür.
 
-*   **Entegre Bellek ve Hesaplama Optimizasyonları:**
-    *   **Ne yapar?** Sınırlı donanım kaynaklarıyla (VRAM) çok büyük modellerin eğitilmesini sağlar.
-    *   **Nasıl çalışır?**
-        *   **Gradient Checkpointing:** Geri yayılım sırasında ara aktivasyonları saklamak yerine yeniden hesaplayarak VRAM'den tasarruf sağlar.
-        *   **CPU Offload:** Checkpointing ile birlikte kullanıldığında, pasif durumdaki parametreleri ve optimizer durumlarını CPU'ya taşıyarak GPU belleğini daha da rahatlatır.
-        *   **FP8 Activation Storage:** Eğitim sırasında MLP katmanının aktivasyonlarını (en çok bellek tüketen ara çıktılardan biri) `FP8` formatında saklayarak bellek kullanımını önemli ölçüde azaltır.
+*   #### Entegre Bellek ve Hesaplama Optimizasyonları
+    *   **Ne yapar?** Sınırlı VRAM ile çok büyük modellerin eğitilmesini sağlar.
+    *   **Nasıl çalışır?** `Gradient Checkpointing`, `CPU Offload` ve `FP8 Activation Storage` gibi tekniklerin sinerjik kullanımıyla GPU belleğini maksimum verimlilikle yönetir.
 
-### Temel Farklılıklar ve Geliştirmeler
+### ✨ Temel Farklılıklar ve Geliştirmeler
 
 | Özellik                 | Standart Transformer Yaklaşımı                  | ✅ ARIA-HELIOS Yaklaşımı                                                              |
 | ------------------------ | ----------------------------------------------- | ---------------------------------------------------------------------------------- |
@@ -53,83 +73,59 @@ ARIA-Helios'un gücü, birbiriyle uyum içinde çalışan modern ve verimli bile
 | **Donanım Verimliliği**  | Yüksek VRAM tüketimi, pahalı donanım gerektirir. | **Checkpointing, Offload, FP8 Aktivasyonlar** ile entegre ve sinerjik bellek optimizasyonu. |
 | **Çıkarım Hızı**         | Standart PyTorch implementasyonları.            | PyTorch 2.0+ **SDPA** (FlashAttention gibi) backend'lerini otomatik kullanarak maksimum hız. |
 
-### Durum ve Yol Haritası
+### 🚀 Durum ve Yol Haritası
 
-*   **Mevcut Sürüm:** H E L I O S (Hyper-Extensible Long-context Optimized System)
-*   **Durum:** Mimarinin referans implementasyonu tamamlandı. Aktif geliştirme ve kapalı eğitim altında.
-*   **Tarih:** 01.08.2025
+*   **Mevcut Sürüm:** `H E L I O S (Hyper-Extensible Long-context Optimized System)`
+*   **Durum:** ✅ Mimarinin referans implementasyonu tamamlandı.
+*   **Geliştirme:** ⏳ Aktif geliştirme ve kapalı eğitim altında.
+*   **Tarih:** `01.08.2025`
 
-### Topluluk ve İletişim
+### 💬 Topluluk ve İletişim
 
 Bu proje kapalı kaynaklı olsa da, yapay zeka topluluğuyla etkileşim kurmaktan ve fikir alışverişinde bulunmaktan heyecan duyuyoruz.
 
-*   **Gelişmeleri Takip Etmek İçin:** Bu depoyu `Watch` ederek en son güncellemelerden haberdar olabilirsiniz.
-*   **İşbirliği ve Erişim Talepleri İçin:** Lütfen `emreaygul.work@gmail.com` üzerinden bizimle iletişime geçin.
-*   **Topluluk:** Yakında duyurulacak Discord sunucumuz için takipte kalın.
+*   **👀 Gelişmeleri Takip Etmek İçin:** Bu depoyu `Watch` ederek en son güncellemelerden haberdar olabilirsiniz.
+*   **🤝 İşbirliği ve Erişim Talepleri İçin:** Lütfen [`emreaygul.work@gmail.com`](mailto:emreaygul.work@gmail.com) üzerinden bizimle iletişime geçin.
+*   **🌐 Topluluk:** Yakında duyurulacak Discord sunucumuz için takipte kalın.
 
 ---
+<br/>
+<a name="english-version"></a>
+## 🇬🇧 English Version
 
-### Lisans
+> **Note:** This repository provides the technical documentation for the `ARIA-HELIOS` architecture, consistent with the provided Python source code. This document is intended to detail the model's philosophy, core components, and design decisions.
 
-Copyright (c) 2025, ARIA Development Team
-
-All rights reserved.
-
-> Bu depoda bulunan materyaller (yazılım, belgeler, mimari tanımları ve diğer tüm içerikler dahil ancak bunlarla sınırlı olmamak üzere) ARIA Development Team'in tescilli mülkiyetidir.
->
-> ARIA Development Team'in önceden açık ve yazılı izni olmaksızın, bu materyallerin herhangi bir bölümünün kopyalanması, çoğaltılması, değiştirilmesi, dağıtılması, tersine mühendisliğe tabi tutulması veya herhangi bir biçimde veya yolla iletilmesi kesinlikle yasaktır.
->
-> Bu materyallere erişim, yalnızca bilgilendirme ve değerlendirme amacıyla sağlanmıştır ve herhangi bir kullanım, lisans veya mülkiyet hakkı vermez.
-
----
----
-
-# English Version
-
-# ARIA-HELIOS (Self-Contained)
-
-**A Hyper-Extensible, Long-context Optimized Self-Regulating Transformer**
-
----
-
-*Note: This repository provides the technical documentation for the `ARIA-HELIOS` architecture, consistent with the provided Python source code. This document is intended to detail the model's philosophy, core components, and design decisions.*
-
----
-
-### Technical Philosophy: Autonomous, Efficient, and Flexible Intelligence
+### 🧠 Technical Philosophy: Autonomous, Efficient, and Flexible Intelligence
 
 ARIA-Helios is a state-of-the-art architecture designed in response to the efficiency and scalability challenges faced by modern Large Language Models. Its development is based on three core, synergistic principles:
 
-1.  **Self-Regulating Information Flow:** The static residual connections (`output = x + F(x)`) in standard Transformer architectures can lead to information bottlenecks or disrupt gradient flow as the model deepens. ARIA-Helios solves this with **Gated Memory Units (GMU)**. These learnable gates, added after each layer's transformation, allow the model to dynamically decide what information to preserve and what new information to integrate, following the formulation `output = (1 - gate) * x + gate * F(x)`. This results in a more stable training process and the learning of richer hierarchical features.
+1.  **Self-Regulating Information Flow:** Instead of standard `output = x + F(x)` residual connections, it uses learnable **Gated Memory Units (GMU)**. These gates, following the `output = (1 - gate) * x + gate * F(x)` formulation, allow the model to dynamically decide what information to preserve and what to integrate, leading to more stable training and richer feature learning.
 
-2.  **Dynamic Context Flexibility:** A model's comprehension should not be limited by the context window it was trained on. ARIA-Helios supports dynamic positional embedding scaling inspired by **YaRN (Yet another RoPE extensioN method)**. This technique intelligently recalibrates the frequencies of Rotary Positional Embeddings (RoPE), enabling the model to effectively process sequence lengths far beyond its training context without requiring a full retrain.
+2.  **Dynamic Context Flexibility:** A model's comprehension should not be limited by its training window. Scaling inspired by **YaRN (Yet another RoPE extensioN method)** enables the model to effectively process sequence lengths far beyond its training context without requiring a full retrain.
 
-3.  **Maximum Hardware Efficiency:** ARIA-Helios is not just a collection of algorithms; it is a philosophy of hardware optimization. Every layer of the architecture is designed to maximize throughput on modern accelerators (GPUs/TPUs) and minimize memory (VRAM) usage. The integrated use of techniques like **Gradient Checkpointing, CPU Offloading,** and **FP8 Activation Storage** (which stores activations in 8-bit during training) makes it possible to train and run massive models on more accessible hardware.
+3.  **Maximum Hardware Efficiency:** Every layer is designed to maximize throughput on modern accelerators (GPUs/TPUs) and minimize VRAM usage. The integrated use of techniques like **Gradient Checkpointing, CPU Offloading,** and **FP8 Activation Storage** makes it possible to train massive models on more accessible hardware.
 
-### Architectural Blueprint & Technical Components
+### 🛠️ Architectural Blueprint & Technical Components
 
 The power of ARIA-Helios comes from the combination of modern, efficient components working in harmony.
 
-*   **Gated Memory Units (GMU):**
+*   #### Gated Memory Units (GMU)
     *   **What it does:** Replaces standard residual connections.
-    *   **How it works:** Dynamically weights the input (`x`) and the layer's transformation (`F(x)`) using a learnable sigmoid gate. Initializing the gates to be "closed" at the start of training (`bias = -3.0`) allows the model to first learn stable identity connections before gradually integrating new information.
+    *   **How it works:** Dynamically weights the input (`x`) and the layer's transformation (`F(x)`) using a learnable sigmoid gate. Initializing the gates with `bias = -3.0` allows the model to first learn stable identity connections.
 
-*   **Dynamic Context Scaling (YaRN-inspired):**
+*   #### Dynamic Context Scaling (YaRN-inspired)
     *   **What it does:** Enables the model to process texts longer than what it saw during training.
-    *   **How it works:** It rescales the frequencies of RoPE positional embeddings and the magnitude of query vectors based on the context extension factor. This allows the model to interpret positional information in long sequences without getting "confused."
+    *   **How it works:** It rescales the frequencies of RoPE positional embeddings and the magnitude of query vectors based on the context extension factor.
 
-*   **Grouped-Query Attention (GQA):**
+*   #### Grouped-Query Attention (GQA)
     *   **What it does:** Increases inference speed and reduces memory bandwidth requirements.
-    *   **How it works:** It uses fewer Key and Value heads relative to the full number of Query heads. This dramatically reduces the size of the KV-Cache, especially during text generation, boosting efficiency.
+    *   **How it works:** It uses fewer Key/Value heads relative to Query heads, dramatically reducing the KV-Cache size.
 
-*   **Integrated Memory & Compute Optimizations:**
-    *   **What it does:** Enables the training of very large models on limited hardware resources (VRAM).
-    *   **How it works:**
-        *   **Gradient Checkpointing:** Saves VRAM by recomputing intermediate activations during the backward pass instead of storing them.
-        *   **CPU Offload:** When used with checkpointing, it further frees up GPU memory by moving inactive parameters and optimizer states to the CPU.
-        *   **FP8 Activation Storage:** Significantly reduces memory usage by storing the activations of the MLP layer (one of the most memory-intensive intermediate outputs) in `FP8` format during training.
+*   #### Integrated Memory & Compute Optimizations
+    *   **What it does:** Enables training of very large models on limited VRAM.
+    *   **How it works:** Synergistically uses `Gradient Checkpointing`, `CPU Offload`, and `FP8 Activation Storage` to manage GPU memory with maximum efficiency.
 
-### Core Differentiators & Enhancements
+### ✨ Core Differentiators & Enhancements
 
 | Feature                  | Standard Transformer Approach                  | ✅ ARIA-HELIOS Approach                                                              |
 | ------------------------ | ---------------------------------------------- | ---------------------------------------------------------------------------------- |
@@ -139,30 +135,30 @@ The power of ARIA-Helios comes from the combination of modern, efficient compone
 | **Hardware Efficiency**  | High VRAM consumption, requires expensive hardware. | Integrated, synergistic memory optimization via **Checkpointing, Offload, & FP8 Activations**. |
 | **Inference Speed**      | Standard PyTorch implementations.              | Automatically uses PyTorch 2.0+ **SDPA** backends (like FlashAttention) for max speed. |
 
-### Status & Roadmap
+### 🚀 Status & Roadmap
 
-*   **Current Version:** H E L I O S (Hyper-Extensible Long-context Optimized System)
-*   **Status:** Reference implementation of the architecture is complete. Under active development and private training.
-*   **Date:** 2025-08-01
+*   **Current Version:** `H E L I O S (Hyper-Extensible Long-context Optimized System)`
+*   **Status:** ✅ Reference implementation of the architecture is complete.
+*   **Development:** ⏳ Under active development and private training.
+*   **Date:** `2025-08-01`
 
-### Community & Contact
+### 💬 Community & Contact
 
 While this project is closed-source, we are excited to engage with the AI community and exchange ideas.
 
-*   **To Follow Developments:** `Watch` this repository to be notified of the latest updates.
-*   **For Collaboration and Access Inquiries:** Please contact us at `emreaygul.work@gmail.com`.
-*   **Community:** Stay tuned for our upcoming Discord server.
+*   **👀 To Follow Developments:** `Watch` this repository to be notified of the latest updates.
+*   **🤝 For Collaboration and Access Inquiries:** Please contact us at [`emreaygul.work@gmail.com`](mailto:emreaygul.work@gmail.com).
+*   **🌐 Community:** Stay tuned for our upcoming Discord server.
 
 ---
 
-### License
-
-Copyright (c) 2025, ARIA Development Team
-
-All rights reserved.
-
+### 📜 Lisans (License)
+> Copyright (c) 2025, ARIA Development Team
+> 
+> All rights reserved.
+> 
 > The materials contained in this repository, including but not limited to software, documentation, architectural descriptions, and all other content, are the proprietary property of the ARIA Development Team.
->
+> 
 > Without the prior express written permission of the ARIA Development Team, no part of these materials may be copied, reproduced, modified, distributed, reverse-engineered, or transmitted in any form or by any means.
->
+> 
 > Access to these materials is provided for informational and evaluation purposes only and does not grant any right of use, license, or ownership.
