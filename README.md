@@ -2,10 +2,6 @@
 ```
 # A R I A - H E L I O S
 ### A Hyper-Extensible, Long-context Optimized Self-Regulating Transformer
-
-[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](https://github.com/your-repo/aria-helios#%EF%B8%8F-lisans-license)
-[![Status: Active Development](https.img.shields.io/badge/Status-Active%20Development-green.svg)](https://github.com/your-repo/aria-helios#-durum-ve-yol-haritası)
-[![Version: 1.0.0-HELIOS](https://img.shields.io/badge/Version-1.0.0--HELIOS-blue.svg)](https://github.com/your-repo/aria-helios#-durum-ve-yol-haritası)
 [![Contact: Email](https.img.shields.io/badge/Contact-Email-informational.svg)](mailto:emreaygul.work@gmail.com)
 
 </div>
