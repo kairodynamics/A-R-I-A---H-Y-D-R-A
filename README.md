@@ -20,7 +20,7 @@
 <a name="türkçe-versiyon"></a>
 ## 🇹🇷 Türkçe Versiyon
 
-> **Not:** Bu depo, `ARIA-HELIOS` mimarisinin sağlanan Python kaynak koduyla uyumlu teknik dökümantasyonunu sunmaktadır. Bu belge, modelin felsefesini, temel bileşenlerini ve tasarım kararlarını detaylandırmak amacıyla oluşturulmuştur.
+> **Not:** Bu depo, `ARIA-HELIOS` mimarisinin kapalı teknik dökümantasyonunu sunmaktadır. Bu belge, modelin felsefesini, temel bileşenlerini ve tasarım kararlarını detaylandırmak amacıyla oluşturulmuştur.
 
 ### 🧠 Teknik Felsefe: Otonom, Verimli ve Esnek Zeka
 
