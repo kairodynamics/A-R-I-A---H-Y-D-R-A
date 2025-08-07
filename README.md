@@ -20,7 +20,7 @@
 <a name="türkçe-versiyon"></a>
 ## 🇹🇷 Türkçe Versiyon
 
-> **ARIA Projesi Evrimi:** Bu depo, ARIA projesinin en son ve en gelişmiş sürümü olan **`PROXIMA`** mimarisinin teknik vizyonunu ve kapalı kaynak dokümantasyonunu içermektedir. `PROXIMA`, önceki `HELIOS` prototipinin temel ilkelerini (dinamik bilgi akışı, bağlam esnekliği) alıp, onları hiyerarşik zeka ve hibrit hesaplama paradigmalarıyla birleştirerek yapay zeka mimarilerinde yeni bir çığır açmaktadır.
+> **ARIA Projesi Evrimi:** Bu depo, ARIA projesinin en son ve en gelişmiş sürümü olan **`PROXIMA`** mimarisinin teknik vizyonunu ve kapalı kaynak dokümantasyonunu içermektedir. `PROXIMA`, önceki sürümlerin prototipinin temel ilkelerini (dinamik bilgi akışı, bağlam esnekliği) alıp, onları hiyerarşik zeka ve hibrit hesaplama paradigmalarıyla birleştirerek yapay zeka mimarilerinde yeni bir çığır açmaktadır.
 
 ### 🧠 Teknik Felsefe: Adaptif, Hiyerarşik ve Hibrit Zeka
 
