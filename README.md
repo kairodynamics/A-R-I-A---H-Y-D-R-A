@@ -1,10 +1,10 @@
-<div align="center">                                          
-
-# A R I A - H E L I O S
-### A Hyper-Extensible, Long-context Optimized Self-Regulating Transformer
-  
-[![Contact: Email]](mailto:emreaygul.work@gmail.com)
-
+<div align="center">
+  <h1 style="font-size: 3em; font-weight: bold; letter-spacing: 5px; text-shadow: 2px 2px 8px #666;">A R I A - P R O X I M A</h1>
+  <h3 style="font-style: italic; color: #555;">A Progressive, Reflexive, Optimized, Hierarchical Intelligence & Memory Architecture</h3>
+  <a href="mailto:emreaygul.work@gmail.com"><img alt="Contact: Email" src="https://img.shields.io/badge/İletişim-E--posta-blue?style=flat-square&logo=gmail&logoColor=white"/></a>
+  <a href="https://github.com/kairodynamics/ARIA-Helios"><img alt="Status" src="https://img.shields.io/badge/Durum-Aktif%20Geliştirme-green?style=flat-square&logo=github&logoColor=white"/></a>
+  <a href="https://huggingface.co/kairodynedynamics/aria-helios/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/Lisans-Özel%20(Tescilli)-red?style=flat-square"/></a>
+  <a href="#"><img alt="Version" src="https://img.shields.io/badge/Sürüm-PROXIMA-purple?style=flat-square"/></a>
 </div>
 
 ---
@@ -20,61 +20,48 @@
 <a name="türkçe-versiyon"></a>
 ## 🇹🇷 Türkçe Versiyon
 
-> **Not:** Bu depo, `ARIA-HELIOS` mimarisinin kapalı teknik dökümantasyonunu sunmaktadır. Bu belge, modelin felsefesini, temel bileşenlerini ve tasarım kararlarını detaylandırmak amacıyla oluşturulmuştur.
+> **ARIA Projesi Evrimi:** Bu depo, ARIA projesinin en son ve en gelişmiş sürümü olan **`PROXIMA`** mimarisinin teknik vizyonunu ve kapalı kaynak dokümantasyonunu içermektedir. `PROXIMA`, önceki `HELIOS` prototipinin temel ilkelerini (dinamik bilgi akışı, bağlam esnekliği) alıp, onları hiyerarşik zeka ve hibrit hesaplama paradigmalarıyla birleştirerek yapay zeka mimarilerinde yeni bir çığır açmaktadır.
 
-### 🧠 Teknik Felsefe: Otonom, Verimli ve Esnek Zeka
+### 🧠 Teknik Felsefe: Adaptif, Hiyerarşik ve Hibrit Zeka
 
-ARIA-Helios, günümüzün büyük dil modellerinin karşılaştığı verimlilik ve ölçeklenebilirlik zorluklarına yanıt olarak tasarlanmış, son teknoloji bir mimaridir. Geliştirmesi, üç temel ve birbiriyle sinerji içinde çalışan ilkeye dayanmaktadır:
+**ARIA-PROXIMA**, büyük dil modelleri evriminin bir sonraki adımıdır. Yoğun (Llama), düz uzmanlı (Mixtral) veya salt durum-uzay (Mamba) mimarilerinin sunduğu çözümlerin ötesinde, bu paradigmaların en güçlü yönlerini birleştiren ve zayıflıklarını ortadan kaldıran, **birleşik bir zeka mimarisidir.**
 
-1.  **Kendi Kendini Düzenleyen Bilgi Akışı (Self-Regulating Information Flow):** Standart artık bağlantıları yerine, öğrenilebilir **Kapılı Bellek Birimleri (Gated Memory Units - GMU)** kullanılır. Bu kapılar modelin hangi bilgiyi koruyacağına ve hangisini entegre edeceğine dinamik olarak karar vermesini sağlayarak daha stabil bir eğitim ve daha zengin bir özellik öğrenimi sunar.
+`PROXIMA`, kaba kuvvet yerine zarafet, homojenlik yerine hiyerarşi, statik akış yerine dinamik kontrol sunar. Felsefesi dört temel ilke üzerine kuruludur:
 
-2.  **Dinamik Bağlam Esnekliği (Dynamic Context Flexibility):** Modelin anlama kapasitesi, eğitim penceresiyle sınırlı olmamalıdır. **YaRN (Yet another RoPE extensioN method)**'dan ilham alan ölçeklendirme, modelin yeniden eğitime gerek kalmadan, eğitimde gördüğünün çok ötesindeki dizi uzunluklarını etkili bir şekilde işlemesine olanak tanır.
+1.  **Aşamalı Bilgi Filtreleme (Progressive Information Filtering):** Standart artık bağlantılar yerine, her işlem birimini saran **Proxima Gated Memory Cell (PGMC)** kullanılır. Bu çift kapılı mekanizma, modelin her adımda *neyi düşüneceğini* ve *düşüncesini ne kadar güncelleyeceğini* dinamik olarak belirlemesini sağlar.
 
-3.  **Maksimum Donanım Verimliliği (Maximum Hardware Efficiency):** Mimarinin her katmanı, modern hızlandırıcılardan (GPU/TPU) maksimum verim almak ve VRAM kullanımını en aza indirmek için tasarlanmıştır. **Gradient Checkpointing, CPU Offloading** ve **FP8 Activation Storage** gibi tekniklerin entegre kullanımı, devasa modellerin daha erişilebilir donanımlarla eğitilmesini mümkün kılar.
+2.  **Hiyerarşik Uzmanlaşma (Hierarchical Specialization):** Parametreler, beyindeki kortikal hiyerarşiyi taklit eden **Hiyerarşik Uzmanlar Karışımı (H-MoE)** yapısıyla organize edilir. Bu, devasa bir kapasitenin sığ bir havuzda değil, derin ve mantıksal bir düzende ölçeklenmesini sağlar.
 
-### 🛠️ Mimari Planı ve Teknik Bileşenler
+3.  **Hibrit Bağlam Asimilasyonu (Hybrid Context Assimilation):** Model, tek bir bağlam işleme yönteminin sınırlamalarına takılı kalmaz. Kısa menzil için **Reflective Attention** ve ultra uzun menzil için **Long-Range State Assimilator (LRSA)** bloklarını birleştirerek hem anlık hassasiyet hem de sonsuz hafıza potansiyeli sunar.
 
-ARIA-Helios'un gücü, birbiriyle uyum içinde çalışan modern ve verimli bileşenlerin birleşiminden gelir.
+4.  **Yansımalı Odaklanma (Reflective Focus):** Dikkat mekanizması, anlamsal öneme göre dikkat ağırlıklarını modüle eden öğrenilebilir bir "yansıma kapısı" ile güçlendirilmiştir. Bu, modelin gürültüyü aktif olarak bastırmasını sağlar.
 
-*   #### Gated Memory Units (GMU)
-    *   **Ne yapar?** Standart artık bağlantıların yerini alır.
-    *   **Nasıl çalışır?** Girdi ve katman dönüşümünü öğrenilebilir bir sigmoid kapısı ile dinamik olarak ağırlıklandırır. Eksi değer ile başlatılan kapılar, modelin önce stabil kimlik bağlantılarını öğrenmesini sağlar.
+---
 
-*   #### Dynamic Context Scaling (YaRN-inspired)
-    *   **Ne yapar?** Modelin eğitimde gördüğünden daha uzun metinleri işlemesini sağlar.
-    *   **Nasıl çalışır?** RoPE pozisyonel gömmelerinin frekanslarını ve sorgu (query) vektörlerinin genliğini, bağlam genişletme faktörüne göre yeniden ölçekler.
+### ⚔️ Rakip Mimarilere Karşı Stratejik Üstünlük: Neden PROXIMA?
 
-*   #### Grouped-Query Attention (GQA)
-    *   **Ne yapar?** Çıkarım hızını artırır ve bellek bant genişliği ihtiyacını azaltır.
-    *   **Nasıl çalışır?** Tam sayıda Sorgu (Query) başlığına karşılık daha az sayıda Anahtar (Key) ve Değer (Value) başlığı kullanarak KV-Cache boyutunu dramatik şekilde küçültür.
+`PROXIMA`, mevcut SOTA mimarilerin çözemediği temel sorunlara meydan okumak için tasarlanmıştır.
 
-*   #### Entegre Bellek ve Hesaplama Optimizasyonları
-    *   **Ne yapar?** Sınırlı VRAM ile çok büyük modellerin eğitilmesini sağlar.
-    *   **Nasıl çalışır?** `Gradient Checkpointing`, `CPU Offload` ve `FP8 Activation Storage` gibi tekniklerin sinerjik kullanımıyla GPU belleğini maksimum verimlilikle yönetir.
-
-### ✨ Temel Farklılıklar ve Geliştirmeler
-
-| Özellik                 | Standart Transformer Yaklaşımı                  | ✅ ARIA-HELIOS Yaklaşımı                                                              |
-| ------------------------ | ----------------------------------------------- | ---------------------------------------------------------------------------------- |
-| **Bilgi Akışı**          | Statik Artık Bağlantı.          | **Dinamik GMU** ile öğrenilebilir bilgi akış kontrolü.          |
-| **Bağlam Penceresi**     | Eğitildiği uzunlukla (örn. 4K token) sınırlıdır. | **Dinamik Ölçekleme (YaRN)** ile çıkarımda bağlamı yeniden eğitime gerek kalmadan genişletebilir. |
-| **Dikkat Mekanizması**   | Multi-Head Attention (MHA).                     | **Grouped-Query Attention (GQA)** ile daha hızlı çıkarım ve düşük KV-cache boyutu.   |
-| **Donanım Verimliliği**  | Yüksek VRAM tüketimi, pahalı donanım gerektirir. | **Checkpointing, Offload, FP8 Aktivasyonlar** ile entegre ve sinerjik bellek optimizasyonu. |
-| **Çıkarım Hızı**         | Standart PyTorch implementasyonları.            | PyTorch 2.0+ **SDPA** (FlashAttention gibi) backend'lerini otomatik kullanarak maksimum hız. |
+| Meydan Okuma              | Geleneksel Çözümler ve Sınırlamaları                                                                                                | 👑 PROXIMA'nın Üstün Çözümü                                                                                                                                                                                                                                                          |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parametre Verimliliği** | **Llama (Yoğun):** Her token, tüm parametreleri aktive eder; maliyetli. <br/> **Mixtral (Düz MoE):** Verimli ama organizasyonsuz; uzmanlaşma sığ kalabilir. | **Hiyerarşik MoE (H-MoE):** Hem verimli hem de organize. Bir "meta-yönlendirici" önce doğru beyin lobunu, sonra doğru nöronu seçer. Bu, daha derin ve anlamlı bir uzmanlaşma sağlar. |
+| **Bilgi Akışı Kontrolü**   | **Tüm Transformer'lar:** Kontrolsüz artık bağlantılar (`x + F(x)`), gürültü birikimine ve eğitimde kararsızlıklara yol açar.                                         | **Proxima Gated Memory Cell (PGMC):** Her katmanda bilgiyi bilinçli olarak filtreler. Sadece gerekli bilgi işlenir, gereksiz olan bastırılır. Bu, daha temiz sinyal ve daha stabil öğrenme demektir.                      |
+| **Bağlam İkilemi**        | **Llama/Mixtral (Salt Dikkat):** Karesel maliyet bağlamı sınırlar. <br/> **Mamba (Salt SSM):** Lineer ölçeklenir ama yerel hassasiyeti düşük olabilir. | **Hibrit (Transformer + SSM):** İki dünyanın en iyisi. Yakın plan için "mikroskop" (Reflective Attention), uzak plan için "teleskop" (LRSA) kullanır. Tek mimaride hem hassasiyet hem de hafıza.                  |
+| **Eğitim Stratejisi**     | **Standart Yaklaşım:** Tüm veriyi homojen olarak tekrar tekrar işlemek, kaynakları verimsiz kullanır.                             | **Döngüsel Pekiştirme:** İnsan öğrenmesini taklit eder. Önce genel "keşif", sonra en zorlu örneklere odaklanan "yoğunlaştırılmış ustalık" fazı. Verimlilik ve derinlik maksimize edilir. |
 
 ### 🚀 Durum ve Yol Haritası
 
-*   **Mevcut Sürüm:** `H E L I O S (Hyper-Extensible Long-context Optimized System)`
-*   **Durum:** ✅ Mimarinin referans implementasyonu tamamlandı.
-*   **Geliştirme:** ⏳ Aktif geliştirme ve kapalı eğitim altında.
-*   **Tarih:** `01.08.2025`
+*   **Mevcut Sürüm:** `P R O X I M A`
+*   **Durum:** ✅ Referans implementasyon ve `v6.0` eğitim stratejisi tamamlandı.
+*   **Geliştirme:** ⏳ Özel veri kümeleri üzerinde aktif ve kapalı devre eğitim devam ediyor.
+*   **Hedef Tarih:** `2026-Q1`
 
 ### 💬 Topluluk ve İletişim
 
-Bu proje kapalı kaynaklı olsa da, yapay zeka topluluğuyla etkileşim kurmaktan ve fikir alışverişinde bulunmaktan heyecan duyuyoruz.
+Bu proje kapalı kaynak kodlu olsa da, yapay zeka topluluğu ile fikir alışverişinde bulunmaktan heyecan duyarız.
 
-*   **👀 Gelişmeleri Takip Etmek İçin:** Bu depoyu `Watch` ederek en son güncellemelerden haberdar olabilirsiniz.
-*   **🤝 İşbirliği ve Erişim Talepleri İçin:** Lütfen [`emreaygul.work@gmail.com`](mailto:emreaygul.work@gmail.com) üzerinden bizimle iletişime geçin.
+*   **👀 Gelişmeleri Takip Etmek İçin:** Bu depoyu `Watch` butonuna tıklayarak izleyebilirsiniz.
+*   **🤝 İşbirliği ve Erişim Talepleri İçin:** Lütfen [`emreaygul.work@gmail.com`](mailto:emreaygul.work@gmail.com) adresinden bizimle iletişime geçin.
 *   **🌐 Topluluk:** Yakında duyurulacak Discord sunucumuz için takipte kalın.
 
 ---
@@ -83,54 +70,41 @@ Bu proje kapalı kaynaklı olsa da, yapay zeka topluluğuyla etkileşim kurmakta
 <a name="english-version"></a>
 ## 🇬🇧 English Version
 
-> **Note:** This repository provides the technical documentation for the `ARIA-HELIOS` architecture, compatible with the provided Python source code. This document was created to detail the model's philosophy, core components, and design decisions.
+> **ARIA Project Evolution:** This repository contains the technical vision and closed-source documentation for **`PROXIMA`**, the latest and most advanced iteration of the ARIA project. `PROXIMA` elevates the core principles of its predecessor, the `HELIOS` prototype (dynamic information flow, context flexibility), by fusing them with hierarchical intelligence and hybrid computational paradigms, pioneering a new class of AI architectures.
 
-### 🧠 Technical Philosophy: Autonomous, Efficient, and Flexible Intelligence
+### 🧠 Technical Philosophy: Adaptive, Hierarchical, and Hybrid Intelligence
 
-ARIA-Helios is a state-of-the-art architecture designed in response to the efficiency and scalability challenges faced by today's large language models. Its development is based on three fundamental and synergistic principles:
+**ARIA-PROXIMA** is the next step in the evolution of large language models. It moves beyond the solutions offered by dense (Llama), flat-expert (Mixtral), or pure state-space (Mamba) architectures to create a **unified intelligence architecture** that combines the greatest strengths of these paradigms while eliminating their weaknesses.
 
-1.  **Self-Regulating Information Flow:** Instead of standard residual connections, learnable **Gated Memory Units (GMUs)** are used. These gates allow the model to dynamically decide which information to preserve and which to integrate, leading to more stable training and richer feature learning.
+`PROXIMA` offers elegance over brute force, hierarchy over homogeneity, and dynamic control over static flow. Its philosophy is built on four core principles:
 
-2.  **Dynamic Context Flexibility:** The model's comprehension capacity should not be limited by its training window. Scaling inspired by **YaRN (Yet another RoPE extensioN method)** allows the model to effectively handle sequence lengths far beyond what it has seen during training, without the need for retraining.
+1.  **Progressive Information Filtering:** Instead of standard residual connections, **Proxima Gated Memory Cells (PGMC)** wrap each processing unit. This dual-gate mechanism allows the model to dynamically decide *what to think about* and *how much to update its state*, ensuring a focused and noise-resistant learning process.
 
-3.  **Maximum Hardware Efficiency:** Every layer of the architecture is designed to maximize throughput on modern accelerators (GPU/TPU) and minimize VRAM usage. The integrated use of techniques like **Gradient Checkpointing, CPU Offloading**, and **FP8 Activation Storage** makes it possible to train massive models on more accessible hardware.
+2.  **Hierarchical Specialization:** Parameters are organized within a **Hierarchical Mixture-of-Experts (H-MoE)** structure that mimics the brain's cortical hierarchy, ensuring that massive capacity is scaled in a deep and logical manner, not a shallow pool.
 
-### 🛠️ Architecture Blueprint and Technical Components
+3.  **Hybrid Context Assimilation:** The model is not confined by a single context-processing method. It combines **Reflective Attention** for short-range tasks and **Long-Range State Assimilators (LRSA)** for ultra-long sequences, offering both high-fidelity understanding and a virtually infinite memory span.
 
-The power of ARIA-Helios comes from the combination of modern and efficient components working in harmony.
+4.  **Reflective Focus:** The attention mechanism is enhanced with a learnable "reflection gate" that modulates attention weights based on semantic importance, allowing the model to actively suppress noise.
 
-*   #### Gated Memory Units (GMU)
-    *   **What it does:** Replaces standard residual connections.
-    *   **How it works:** It dynamically weights the input and the layer transformation with a learnable sigmoid gate. The gates are initialized with a negative bias, encouraging the model to first learn stable identity connections.
+---
 
-*   #### Dynamic Context Scaling (YaRN-inspired)
-    *   **What it does:** Enables the model to process texts longer than those seen during training.
-    *   **How it works:** It rescales the frequencies of RoPE positional embeddings and the magnitude of query vectors according to the context extension factor.
+### ⚔️ Strategic Superiority Over Competing Architectures: Why PROXIMA?
 
-*   #### Grouped-Query Attention (GQA)
-    *   **What it does:** Increases inference speed and reduces memory bandwidth requirements.
-    *   **How it works:** It dramatically reduces the KV-Cache size by using fewer Key (K) and Value (V) heads than the full number of Query (Q) heads.
+`PROXIMA` is designed to challenge the fundamental limitations of current SOTA architectures.
 
-*   #### Integrated Memory and Computation Optimizations
-    *   **What it does:** Enables the training of very large models with limited VRAM.
-    *   **How it works:** It manages GPU memory with maximum efficiency through the synergistic use of techniques like `Gradient Checkpointing`, `CPU Offload`, and `FP8 Activation Storage`.
-
-### ✨ Key Differences and Improvements
-
-| Feature                  | Standard Transformer Approach                   | ✅ ARIA-HELIOS Approach                                                              |
-| ------------------------ | ----------------------------------------------- | ---------------------------------------------------------------------------------- |
-| **Information Flow**     | Static Residual Connection                      | Learnable information flow control with **Dynamic GMU**.                           |
-| **Context Window**       | Limited to training length (e.g., 4K tokens).   | Can extend context at inference time without retraining via **Dynamic Scaling (YaRN)**. |
-| **Attention Mechanism**  | Multi-Head Attention (MHA).                     | Faster inference and smaller KV-cache with **Grouped-Query Attention (GQA)**.      |
-| **Hardware Efficiency**  | High VRAM consumption, requires expensive hardware. | Integrated and synergistic memory optimization with **Checkpointing, Offload, FP8 Activations**. |
-| **Inference Speed**      | Standard PyTorch implementations.               | Maximum speed by automatically using PyTorch 2.0+ **SDPA** backends (like FlashAttention). |
+| Challenge                 | Conventional Solutions & Their Limitations                                                                                             | 👑 PROXIMA's Superior Solution                                                                                                                                                                                                                                                           |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameter Efficiency**  | **Llama (Dense):** Every token activates all parameters; computationally expensive. <br/> **Mixtral (Flat MoE):** Efficient, but disorganized; specialization can remain shallow. | **Hierarchical MoE (H-MoE):** Both efficient and organized. A "meta-router" first selects the right brain lobe (expert group), then the right neuron (expert), enabling deeper and more meaningful specialization. |
+| **Information Flow Control** | **All Transformers:** Uncontrolled residual connections (`x + F(x)`) lead to noise accumulation and training instability.                                         | **Proxima Gated Memory Cell (PGMC):** Consciously filters information at every layer. Only necessary information is processed, and irrelevant data is suppressed, leading to a cleaner signal and more stable learning.                      |
+| **The Context Dilemma**   | **Llama/Mixtral (Attention-Only):** Quadratic cost limits practical context. <br/> **Mamba (SSM-Only):** Scales linearly but may lack the high-fidelity local understanding of transformers. | **Hybrid (Transformer + SSM):** The best of both worlds. It uses a "microscope" (Reflective Attention) for the close-up view and a "telescope" (LRSA) for the long view, offering both precision and memory in a single architecture.                  |
+| **Training Strategy**     | **Standard Approach:** Repeatedly processing the entire dataset, inefficiently using resources on already-learned examples.                             | **Cyclic Consolidation:** Mimics human learning. First, a broad "discovery" phase, followed by a "focused mastery" phase on the most challenging, information-dense samples, maximizing both efficiency and depth. |
 
 ### 🚀 Status and Roadmap
 
-*   **Current Version:** `H E L I O S (Hyper-Extensible Long-context Optimized System)`
-*   **Status:** ✅ Reference implementation of the architecture is complete.
-*   **Development:** ⏳ Under active development and closed training.
-*   **Date:** `01.08.2025`
+*   **Current Version:** `P R O X I M A`
+*   **Status:** ✅ Reference implementation and `v6.0` training strategy are complete.
+*   **Development:** ⏳ Under active, closed-door training on proprietary datasets.
+*   **Target Date:** `Q1 2026`
 
 ### 💬 Community and Contact
 
@@ -142,13 +116,8 @@ Although this project is closed-source, we are excited to engage with the AI com
 
 ---
 
-### 📜 Lisans (License)
-> Copyright (c) 2025, ARIA Development Team
-> 
-> All rights reserved.
-> 
-> The materials contained in this repository, including but not limited to software, documentation, architectural descriptions, and all other content, are the proprietary property of the ARIA Development Team.
-> 
-> Without the prior express written permission of the ARIA Development Team, no part of these materials may be copied, reproduced, modified, distributed, reverse-engineered, or transmitted in any form or by any means.
-> 
-> Access to these materials is provided for informational and evaluation purposes only and does not grant any right of use, license, or ownership.
+### 📜 License
+
+The architecture, software, and all materials in this project are protected under a **special, proprietary license** that governs non-commercial, evaluation-only use. The full text of the license details the core principles and usage restrictions of the project.
+
+> **[Click Here to Read the Full License](https://huggingface.co/kairodynedynamics/aria-helios/blob/main/LICENSE)**
