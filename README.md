@@ -70,7 +70,7 @@ Bu proje kapalı kaynak kodlu olsa da, yapay zeka topluluğu ile fikir alışver
 <a name="english-version"></a>
 ## 🇬🇧 English Version
 
-> **ARIA Project Evolution:** This repository contains the technical vision and closed-source documentation for **`PROXIMA`**, the latest and most advanced iteration of the ARIA project. `PROXIMA` elevates the core principles of its predecessor, the `HELIOS` prototype (dynamic information flow, context flexibility), by fusing them with hierarchical intelligence and hybrid computational paradigms, pioneering a new class of AI architectures.
+> **ARIA Project Evolution:** This repository contains the technical vision and closed-source documentation for **`PROXIMA`**, the latest and most advanced iteration of the ARIA project. `PROXIMA` breaks new ground in AI architectures by taking the core principles of the previous versions' prototype (dynamic information flow, context flexibility) and combining them with hierarchical intelligence and hybrid computing paradigms.
 
 ### 🧠 Technical Philosophy: Adaptive, Hierarchical, and Hybrid Intelligence
 
