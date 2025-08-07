@@ -2,7 +2,6 @@
   <h1 style="font-size: 3em; font-weight: bold; letter-spacing: 5px; text-shadow: 2px 2px 8px #666;">A R I A - P R O X I M A</h1>
   <h3 style="font-style: italic; color: #555;">A Progressive, Reflexive, Optimized, Hierarchical Intelligence & Memory Architecture</h3>
   <a href="mailto:emreaygul.work@gmail.com"><img alt="Contact: Email" src="https://img.shields.io/badge/İletişim-E--posta-blue?style=flat-square&logo=gmail&logoColor=white"/></a>
-  <a href="https://github.com/kairodynamics/ARIA-Helios"><img alt="Status" src="https://img.shields.io/badge/Durum-Aktif%20Geliştirme-green?style=flat-square&logo=github&logoColor=white"/></a>
   <a href="https://huggingface.co/kairodynedynamics/aria-helios/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/Lisans-Özel%20(Tescilli)-red?style=flat-square"/></a>
   <a href="#"><img alt="Version" src="https://img.shields.io/badge/Sürüm-PROXIMA-purple?style=flat-square"/></a>
 </div>
